@@ -20,20 +20,21 @@ namespace ConsumeApi.Controllers
             appSetting = app;
             ApplicationSettings.WebApiUrl = appSetting.Value.WebApiBaseUrl;
         }
-
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
-            var group = await ApiClientFactory.instance.GetGroup("SEP-172");
-            MessageSender sender = new MessageSender();
-
-            sender.SendMessageToList(group, "Тест");
+            
 
             return View();
         }
+        [HttpPost]
 
-        public async Task<IActionResult> SendMessage()
+        public async Task<IActionResult> Index(string message, string group)
         {
-            
+            var Group = await ApiClientFactory.instance.GetGroup(group);
+            MessageSender sender = new MessageSender();
+
+            sender.SendMessageToList(Group, message);
             return View();
         }
     }

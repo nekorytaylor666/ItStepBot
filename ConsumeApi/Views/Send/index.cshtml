@@ -1,10 +1,12 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿
 @{
+ViewData["Message"] = "Message";
+ViewData["Group"] = "Group";
 }
+
+<br>
 <div class="col-xs-12">
-    <a href="index.html">
+    <a asp-controller="Home">
         <div class="back">НАЗАД</div>
     </a>
 </div>
@@ -29,17 +31,21 @@
         <form id="deliveryForm" action="" method="POST">
             Выберите группу:<br>
             <br>
-            <select name="groups" id="group">
-                <option>SEP-172</option>
+            <select name="group">
+                <option value="SEP-172">SEP-172</option>
+                <option value="SEP-182">SEP-182</option>
+                <option value="SPB-192">SPB-192</option>
             </select>
             <br><br> Введите текст сообщения:<br><br>
-            <textarea id="myTextarea" cols="40" rows="2"></textarea>
+            <textarea id="myTextarea" cols="40" rows="2"  name="message"></textarea>
             <br>
             <br>
-            <input type="checkbox" name="checkbox"> <u> Каждую неделю в этот день</u></input>
+            <input type="checkbox" name="checkbox"> <u> Каждую неделю в этот день</u>
             <br>
-            <br>
+            <br> 
             <input type="submit" id="submitButton" value="Отправить">
+            
+        </form>
     </div>
 </div>
 

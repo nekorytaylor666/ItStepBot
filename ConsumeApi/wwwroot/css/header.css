@@ -1,5 +1,5 @@
 body {
-    background-color: #106db238;
+    background-color: lightblue;
 }
 
 .menuItem {
@@ -93,7 +93,7 @@ body {
     border: 5px solid #106db2;
     color: white;
     border-radius: 20px;
-    background-color: #106db242;
+    background-color: lightblue;
     font-size: 18px;
     text-align: center;
     padding: 20px;

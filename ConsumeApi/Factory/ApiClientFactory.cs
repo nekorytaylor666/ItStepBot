@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ConsumeApi.Factory
 {
-    internal static class ApiClientFactory
+    public static class ApiClientFactory
     {
         private static Uri apiUri;
 

@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppCoreModels", "AppCoreMod
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreAppClient", "CoreAppClient\CoreAppClient.csproj", "{9A0946C4-60FB-4B7F-82F6-B14D809AEB25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelegramSender", "TelegramSender\TelegramSender.csproj", "{680F4330-B2DE-47CC-851D-1B83E68DF6D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TelegramSender", "TelegramSender\TelegramSender.csproj", "{680F4330-B2DE-47CC-851D-1B83E68DF6D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
